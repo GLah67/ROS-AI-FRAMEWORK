@@ -1,0 +1,226 @@
+# RAF-SPEC-001
+
+# ROS AI Framework Overview
+
+---
+
+Status
+
+Draft
+
+Version
+
+1.0.0
+
+Project
+
+ROS AI Framework
+
+Document ID
+
+RAF-SPEC-001
+
+---
+
+# Vision
+
+ROS AI Framework ialah sebuah AI Framework modular yang direka supaya boleh beroperasi di atas mana-mana Large Language Model (LLM).
+
+Framework ini memisahkan:
+
+- Core
+- Domain
+- Rules
+- Engines
+- Workflows
+- Templates
+
+supaya setiap komponen boleh dibangunkan secara bebas.
+
+---
+
+# Mission
+
+Menyediakan satu framework AI yang:
+
+✓ Modular
+
+✓ Portable
+
+✓ Maintainable
+
+✓ LLM Agnostic
+
+✓ Domain Agnostic
+
+---
+
+# Philosophy
+
+Framework dahulu.
+
+LLM kemudian.
+
+LLM hanyalah execution layer.
+
+Framework ialah intelligence layer.
+
+---
+
+# Primary Objectives
+
+1.
+
+Mengasingkan pengetahuan daripada logik.
+
+2.
+
+Mengasingkan logik daripada execution.
+
+3.
+
+Mengasingkan workflow daripada engine.
+
+4.
+
+Mengasingkan template daripada output.
+
+5.
+
+Membolehkan domain baru ditambah tanpa mengubah framework.
+
+---
+
+# Core Principles
+
+## Principle 01
+
+Single Responsibility
+
+Setiap layer hanya mempunyai satu tugas.
+
+---
+
+## Principle 02
+
+Separation of Concerns
+
+Knowledge tidak membuat keputusan.
+
+Rules tidak menghasilkan output.
+
+Engine tidak menyimpan knowledge.
+
+---
+
+## Principle 03
+
+Modularity
+
+Semua komponen boleh diganti.
+
+---
+
+## Principle 04
+
+Scalability
+
+Framework mesti boleh berkembang kepada ratusan fail.
+
+---
+
+## Principle 05
+
+Portability
+
+Framework boleh dijalankan di atas:
+
+- Claude
+
+- ChatGPT
+
+- Gemini
+
+- Llama
+
+- Mistral
+
+atau mana-mana LLM lain.
+
+---
+
+# Framework Layers
+
+Layer 1
+
+Core
+
+↓
+
+Layer 2
+
+Domain
+
+↓
+
+Layer 3
+
+Rules
+
+↓
+
+Layer 4
+
+Engine
+
+↓
+
+Layer 5
+
+Workflow
+
+↓
+
+Layer 6
+
+Template
+
+↓
+
+Layer 7
+
+Output
+
+---
+
+# Non Goals
+
+Framework bukan:
+
+- Chatbot
+
+- Prompt Collection
+
+- Template Collection
+
+Framework ialah architecture.
+
+---
+
+# Success Definition
+
+ROS AI Framework dianggap berjaya apabila:
+
+- Domain baru boleh ditambah.
+
+- LLM boleh ditukar.
+
+- Rules boleh diubah.
+
+- Engine boleh diganti.
+
+tanpa mengubah keseluruhan framework.
+
+---
+
+# End Of Specification
